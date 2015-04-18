@@ -1,0 +1,178 @@
+body{
+	font-family:'Open Sans', Aria, sans-serif;
+	font:14px/1.5;
+	color:#555;
+	font-weight: 300;
+}
+
+.ba-container{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Typo*/
+a{
+
+	color:#82B440;
+	text-decoration: underline;
+	-webkit-transition: color 0.5s, text-shadow 0.5s;
+	-moz-transition: color 0.5s, text-shadow 0.5s;
+	transition: color 0.5s, text-shadow 0.5s;
+}
+h1,h2,h3,h4,h5,h6{
+	margin-bottom: 23px;
+	font-weight: normal;
+}
+p{
+	margin-bottom: 23px;
+}
+h1{
+	font-size: 29px;
+	font-weight: 700;
+
+}
+h2{
+	font-size: 26px;
+}
+h3{
+	font-size: 23px;
+}
+h4{
+	font-size: 20px;
+}
+h5,h6{
+	font-size: 17px;
+}
+/*Header*/
+.ba-header{
+	background: url("../img/banner.jpg") no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	background-size:cover;
+	color:#fff;
+}
+.ba-header nav{
+	background: rgba(0,0,0, 0.7);
+
+}
+.ba-header .banner{
+	padding:70px 90px 90px;
+}
+.ba-header .banner:last-child{
+	margin-bottom: 0;
+}
+.ba-header nav a{
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.ba-header nav:hover a{
+	color:transparent;
+	text-shadow: 0 0 3px #fff;
+}
+.ba-header nav:hover a:hover
+{
+	color:#fff;
+	text-shadow: none;
+
+}
+.ba-header nav{
+	text-align: center;
+	font-size: 0;
+}
+.ba-header nav li{
+	display:inline-block;
+
+}
+.ba-header nav li a{
+	display: block;
+	font-size: 14px;
+	padding: 0 15px;
+	height: 64px;
+	line-height: 64px;
+}
+.ba-header .logo{
+	display: inline-block;
+	text-transform: uppercase;
+	background: #82B440;
+	font-size:26px;
+	padding-left:5px;
+	padding-right:5px;
+	margin-bottom: 15px;
+}
+.ba-header .banner p{
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+/*Rows*/
+.ba-row{
+	padding: 90px 0;
+	background: #f2f2f2;
+}
+.ba-grid{
+	margin-left: -80px;
+}
+.ba-byline{
+	font-size: 20px;
+}
+.ba-grid > [class*="ba-width"]{
+	padding-left: 80px;
+}
+.ba-bg-primary{
+	background: #82B440;
+	color:#ffffff;
+
+}
+.ba-button,button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+	display: inline-block;
+	color:#82B440;
+	padding: 0 15px;
+	height: 54px;
+	line-height: 54px;
+	border: 1px solid #82B440;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: inherit;
+	cursor:pointer;
+	font-size: 14px;
+	letter-spacing: 1px;
+
+	-webkit-transition: color 0.5s, background-color .5s, border-color .5s;
+	-moz-transition: color 0.5s, background-color .5s, border-color .5s;
+	transition: color 0.5s background-color .5s, border-color .5s;
+
+}
+.ba-button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+	background: #82B440;
+	color:#fff;
+}
+
+.ba-bg-primary .ba-button,
+.ba-bg-primary button,
+.ba-bg-primary input[type="button"],
+.ba-bg-primary input[type="submit"],
+.ba-bg-primary input[type="reset"]{
+	background-color: #82B440;
+	color:#ffffff;
+	border-color:#ffffff;
+
+}
+.ba-bg-primary .ba-button:hover,
+.ba-bg-primary button:hover,
+.ba-bg-primary input[type="button"]:hover,
+.ba-bg-primary input[type="submit"]:hover,
+.ba-bg-primary input[type="reset"]:hover{
+	background-color: #ffffff;
+	color:#82B440;
+
+}
+
+
