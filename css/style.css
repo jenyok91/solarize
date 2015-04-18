@@ -1,6 +1,5 @@
 body{
-	font-family:'Open Sans', Aria, sans-serif;
-	font:14px/1.5;
+	font:14px/1.5 'Open Sans', Aria, sans-serif;
 	color:#555;
 	font-weight: 300;
 }
@@ -38,10 +37,12 @@ h3{
 	font-size: 23px;
 }
 h4{
-	font-size: 20px;
+	font-size: 18px;
+	font-weight: 700;
 }
 h5,h6{
-	font-size: 17px;
+	font-size: 16px;
+	font-weight: 700;
 }
 /*Header*/
 .ba-header{
@@ -49,10 +50,6 @@ h5,h6{
 	-webkit-background-size: cover;
 	background-size:cover;
 	color:#fff;
-}
-.ba-header nav{
-	background: rgba(0,0,0, 0.7);
-
 }
 .ba-header .banner{
 	padding:70px 90px 90px;
@@ -70,18 +67,22 @@ h5,h6{
 	color:transparent;
 	text-shadow: 0 0 3px #fff;
 }
-.ba-header nav:hover a:hover
-{
+.ba-header nav:hover a:hover {
 	color:#fff;
 	text-shadow: none;
-
+}
+.ba-header nav:hover li:hover > a {
+	color:#fff;
+	text-shadow: none;
 }
 .ba-header nav{
 	text-align: center;
 	font-size: 0;
+	background: rgba(0,0,0, 0.7);
 }
 .ba-header nav li{
 	display:inline-block;
+	position: relative;;
 
 }
 .ba-header nav li a{
@@ -91,6 +92,34 @@ h5,h6{
 	height: 64px;
 	line-height: 64px;
 }
+.ba-header nav .ba-dropdown{
+	position: absolute;
+	background-color: rgba(0,0,0, .7);
+	width: 200px;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: none;
+	top:100%;
+	left:0;
+}
+.ba-header nav li:hover > .ba-dropdown{
+	display: block;
+}
+.ba-header nav .ba-dropdown .ba-dropdown{
+	left: 100%;
+	top:0;
+}
+.ba-header nav .ba-dropdown li{
+	display: block;
+}
+.ba-header nav .ba-dropdown li a{
+	height: auto;
+	line-height: 1.3;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 .ba-header .logo{
 	display: inline-block;
 	text-transform: uppercase;
@@ -108,7 +137,9 @@ h5,h6{
 /*Rows*/
 .ba-row{
 	padding: 90px 0;
-	background: #f2f2f2;
+}
+.ba-row h1{
+	text-transform: uppercase;
 }
 .ba-grid{
 	margin-left: -80px;
@@ -119,10 +150,29 @@ h5,h6{
 .ba-grid > [class*="ba-width"]{
 	padding-left: 80px;
 }
+.ba-row-sasha-grey{
+	background: #f2f2f2;
+}
+.ba-service{
+	padding-left: 40px;
+	position: relative;
+
+}
+.ba-service .fa{
+	position:absolute;
+	display: block;
+	left:10px;
+	top:5px;
+	color:#82B440;
+	font-size: 21px;
+}
 .ba-bg-primary{
 	background: #82B440;
 	color:#ffffff;
 
+}
+.ba-bg-second{
+	background-color: #222222;
 }
 .ba-button,button,
 input[type="button"],
@@ -173,6 +223,44 @@ input[type="reset"]:hover{
 	background-color: #ffffff;
 	color:#82B440;
 
+}
+/*Image*/
+.ba-round img{
+	border:8px solid #fff;
+	border-radius: 100%;
+}
+/*Footer*/
+footer h1{
+	color:#fff;
+}
+ul.icons {
+	padding-bottom: 56px;
+	border-bottom: 1px solid rgba(150,150,150, 0.3);
+}
+
+.icons li i {
+	color: #4E4E4E;
+	font-size: 28px;
+}
+.icons li i:hover {
+	color: #fff;
+}
+
+ul.icons li {
+	display: inline-block;
+	line-height: 1;
+	padding: 7px 14px;
+}
+.copyright,
+.copyright p,
+.copyright a {
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 42px 0 0 0;
+	color: #7b7b7b;
+	font-size: 16px;
+	text-decoration: none;
 }
 
 
